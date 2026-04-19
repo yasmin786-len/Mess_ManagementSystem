@@ -1,0 +1,143 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f7;
+}
+
+/* ===== HOME ===== */
+.home-container {
+    min-height: 100vh;
+    background-color: #f3f4f7;
+    color: #2b2b2b;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ===== BADGE ===== */
+.badge {
+    display: inline-block;
+    background: #ede9fe;
+    color: #7c3aed;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* ===== TITLE ===== */
+.title-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2b2b2b;
+    line-height: 1.3;
+}
+.title-section span {
+    background: linear-gradient(to right, #7c3aed, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.subtitle {
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* ===== CARDS ===== */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+/* ===== CARDS ===== */
+.card {
+    padding: 30px 24px;
+    border-radius: 20px;
+    width: 260px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;   /* ← invisible border by default */
+}
+.card:hover {
+    transform: translateY(-6px);
+    border: 2px solid #2b2b2b;             /* ← dark outline on hover */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);  /* ← deeper shadow too */
+}
+
+.card:nth-child(1):hover { border: 2px solid #6366f1; } /* purple for Student */
+.card:nth-child(2):hover { border: 2px solid #f97316; } /* orange for Staff   */
+.card:nth-child(3):hover { border: 2px solid #22c55e; } /* green  for Admin   */
+/* Card text */
+.card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 6px;
+}
+.card p {
+    flex-grow: 1;
+    font-size: 12px;
+    margin-bottom: 18px;
+    color: #6b7280;
+}
+
+/* ===== ICON CIRCLES ===== */
+.icon-wrap {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+.icon-wrap.purple  { background-color: #6366f1; }  /* Manager  */
+.icon-wrap.orange  { background-color: #f97316; }  /* Customer */
+.icon-wrap.green   { background-color: #22c55e; }  /* Delivery */
+.icon-wrap svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+}
+
+/* ===== BUTTONS ===== */
+/* ===== BUTTONS ===== */
+.btn {
+    padding: 8px 22px;
+    border: none;
+    border-radius: 20px;        /* pill shape */
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    transition: opacity 0.2s ease;
+    width: fit-content;         /* ← shrink to text width */
+    margin: 0 auto;             /* ← center it */
+    display: block;             /* ← needed for margin auto to work */
+}
+.btn:hover { opacity: 0.85; }
+
+.student-btn { background-color: #6366f1; }
+.staff-btn   { background-color: #f97316; }
+.admin-btn   { background-color: #22c55e; }
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+
+
